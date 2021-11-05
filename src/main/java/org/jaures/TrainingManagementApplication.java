@@ -23,11 +23,11 @@ public class TrainingManagementApplication implements CommandLineRunner{
 		// TODO Auto-generated method stub
 		
 
-		etudiantRepository.save(new Etudiant(null,"Fotsing","jaures",new Date()));
-		etudiantRepository.save(new Etudiant(null,"Fotsing","jaures",new Date()));
-		etudiantRepository.save(new Etudiant(null,"Fotsing","jaures",new Date()));
-		etudiantRepository.save(new Etudiant(null,"Fotsing","jaures",new Date()));
-		etudiantRepository.save(new Etudiant(null,"Fotsing","jaures",new Date()));
+		etudiantRepository.save(new Etudiant());
+		etudiantRepository.save(new Etudiant());
+		etudiantRepository.save(new Etudiant());
+		etudiantRepository.save(new Etudiant());
+		etudiantRepository.save(new Etudiant());
 	}
 
 }
