@@ -1,5 +1,7 @@
 package org.jaures;
 
+import java.util.Date;
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
@@ -20,8 +22,12 @@ public class TrainingManagementApplication implements CommandLineRunner{
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
 		
-		Etudiant et=new Etudiant();
-		
+
+		etudiantRepository.save(new Etudiant(null,"Fotsing","jaures",new Date()));
+		etudiantRepository.save(new Etudiant(null,"Fotsing","jaures",new Date()));
+		etudiantRepository.save(new Etudiant(null,"Fotsing","jaures",new Date()));
+		etudiantRepository.save(new Etudiant(null,"Fotsing","jaures",new Date()));
+		etudiantRepository.save(new Etudiant(null,"Fotsing","jaures",new Date()));
 	}
 
 }
