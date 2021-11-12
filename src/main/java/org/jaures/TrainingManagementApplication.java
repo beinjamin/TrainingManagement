@@ -3,11 +3,16 @@ package org.jaures;
 import java.util.Date;
 
 
+
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+import lombok.AllArgsConstructor;
+import lombok.NoArgsConstructor;
+@AllArgsConstructor
+@NoArgsConstructor
 @SpringBootApplication
 public class TrainingManagementApplication implements CommandLineRunner{
 
@@ -25,10 +30,7 @@ public class TrainingManagementApplication implements CommandLineRunner{
 		
 
 		etudiantRepository.save(new Etudiant(null,"Fotsing","Jaures",new Date()));
-		etudiantRepository.save(new Etudiant());
-		etudiantRepository.save(new Etudiant());
-		etudiantRepository.save(new Etudiant());
-		etudiantRepository.save(new Etudiant());
+	
 	}
 
 }

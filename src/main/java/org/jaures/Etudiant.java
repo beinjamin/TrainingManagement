@@ -4,6 +4,7 @@ import java.util.Date;
 
 
 
+
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
@@ -22,5 +23,12 @@ public class Etudiant {
      private String nom;
      private String prenom;
      private Date dateNaissance;
-
+	public Etudiant(Long id, String nom, String prenom, Date dateNaissance) {
+		this.id=id;
+		this.nom=nom;
+		this.prenom=prenom;
+		this.dateNaissance=dateNaissance;
+		// TODO Auto-generated constructor stub
+	}
+	
 }
