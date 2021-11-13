@@ -38,6 +38,10 @@ public class TrainingManagementApplication implements CommandLineRunner{
 		etudiantRepository.save(new Etudiant(null,"Hugo le pomnier","Venaline",new Date()));
 		
 		etudiantRepository.save(new Etudiant(null,"Pombillou","Jaures",new Date()));
+		
+		etudiantRepository.save(new Etudiant(null,"Hugues","Alain",new Date()));
+		
+		etudiantRepository.save(new Etudiant(null,"TOTO","ALON",new Date()));
 	
 	}
 
