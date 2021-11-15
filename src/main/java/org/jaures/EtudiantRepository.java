@@ -10,4 +10,6 @@ public interface EtudiantRepository extends JpaRepository<Etudiant, Long>{
 	
 	public List<Etudiant> findByNomContains(String nom);
 
+	public void save(Etudiant etudiant, Formation f1);
+
 }
