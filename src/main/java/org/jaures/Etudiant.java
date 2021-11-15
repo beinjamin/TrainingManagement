@@ -28,7 +28,7 @@ public class Etudiant {
      private String prenom;
      private Date dateNaissance;
      @ManyToOne
-     @JoinColumn(name="ID_ETUDIANT")
+    
      private Formation formation;
      public Etudiant() {
     	 

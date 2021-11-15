@@ -6,6 +6,7 @@ import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.GenerationType;
 import javax.persistence.Id;
+import javax.persistence.OneToMany;
 
 import lombok.AllArgsConstructor;
 import lombok.Data;
@@ -21,6 +22,8 @@ public class Formation {
 	private Long id;
 	private String nom;
 	private int duree;
+	
+	@OneToMany(mappedBy="formation")
 	
     private Collection<Etudiant> etudiants;
 }
